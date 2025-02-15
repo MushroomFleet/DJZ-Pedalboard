@@ -20,11 +20,11 @@ Once installed, the custom nodes will be available within the ComfyUI interface:
 
 ## The .pdl Format
 
-The repository includes several `.pdl` files that define audio effect plugins for the pedalboard. These files specify the configuration, parameters, and chains for various audio effects. For more detailed documentation on the effect plugins, please refer to [this link](#).
+The repository includes several `.pdl` files that define audio effect plugins for the pedalboard. These files specify the configuration, parameters, and chains for various audio effects. For more detailed documentation on the effect plugins, please refer to [PDL Information](https://github.com/MushroomFleet/DJZ-Pedalboard/blob/main/pedalboard/pedalboard.md).
 
 ## Gradio Effect Designer
 
-This project also features a Gradio-based effect designer tool that enables you to create and test custom `.pdl` files through an interactive web interface. For more information and updates regarding the Gradio effect designer, visit [this page](#).
+This project also features a Gradio-based effect designer tool that enables you to create and test custom `.pdl` files through an interactive web interface. For more information and updates regarding the Gradio effect designer, visit [PDL Designer](https://github.com/MushroomFleet/Pedalboard-Gradio).
 
 ## Additional Notes
 
