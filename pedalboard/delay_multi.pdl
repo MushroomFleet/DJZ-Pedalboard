@@ -1,0 +1,4 @@
+# Delay Multi
+[Delay(delay_seconds=0.2, feedback=0.3, mix=0.3),
+Delay(delay_seconds=0.4, feedback=0.2, mix=0.2)],
+"delay_multi.wav"
