@@ -1,4 +1,5 @@
 # DJZ Pedalboard Custom Nodes for ComfyUI
+![node-preview](https://raw.githubusercontent.com/MushroomFleet/DJZ-Pedalboard/refs/heads/main/images/node.png)
 
 This project provides a collection of custom nodes designed for enhanced audio effects in ComfyUI. With an intuitive pedalboard interface, users can easily integrate and manipulate various audio effects within their workflows.
 
@@ -14,15 +15,16 @@ This project provides a collection of custom nodes designed for enhanced audio e
 ## How to Use the Nodes
 
 Once installed, the custom nodes will be available within the ComfyUI interface:
-- Drag and drop the nodes into your workflow.
-- Configure each node according to your audio effect requirements.
+- Add the nodes into your workflow.
+- Select your audio effect requirements.
 - Refer to the example workflows in the `example-workflow/` directory for practical guidance on integrating and using these nodes.
 
 ## The .pdl Format
 
-The repository includes several `.pdl` files that define audio effect plugins for the pedalboard. These files specify the configuration, parameters, and chains for various audio effects. For more detailed documentation on the effect plugins, please refer to [PDL Information](https://github.com/MushroomFleet/DJZ-Pedalboard/blob/main/pedalboard/pedalboard.md).
+The repository includes several `.pdl` files that define audio effect plugins for the pedalboard. These files specify the configuration, parameters, and chains for various audio effects. For more detailed documentation on the effect plugins, please refer to [PDL Information](https://github.com/MushroomFleet/DJZ-Pedalboard/blob/main/pedalboard/pedalboard.md). Check the /pedalboard/ folder to see the current list of PDL effects.
 
 ## Gradio Effect Designer
+![designer-ui](https://raw.githubusercontent.com/MushroomFleet/DJZ-Pedalboard/refs/heads/main/images/gradio-designer.png)
 
 This project also features a Gradio-based effect designer tool that enables you to create and test custom `.pdl` files through an interactive web interface. For more information and updates regarding the Gradio effect designer, visit [PDL Designer](https://github.com/MushroomFleet/Pedalboard-Gradio).
 
