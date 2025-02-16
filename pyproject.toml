@@ -1,0 +1,15 @@
+[project]
+name = "djz-pedalboard"
+description = "This project provides a collection of custom nodes designed for enhanced audio effects in ComfyUI. With an intuitive pedalboard interface, users can easily integrate and manipulate various audio effects within their workflows."
+version = "1.0.0"
+license = {file = "LICENSE"}
+dependencies = ["pedalboard"]
+
+[project.urls]
+Repository = "https://github.com/MushroomFleet/DJZ-Pedalboard"
+#  Used by Comfy Registry https://comfyregistry.org
+
+[tool.comfy]
+PublisherId = ""
+DisplayName = "DJZ-Pedalboard"
+Icon = ""
