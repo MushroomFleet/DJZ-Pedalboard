@@ -1,0 +1,3 @@
+# Compressor
+[Compressor(threshold_db=-20, ratio=4, attack_ms=5, release_ms=100)],
+"compressed.wav"

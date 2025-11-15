@@ -1,0 +1,173 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Background Palette */
+    --background: 250 24% 10%;
+    --card: 250 20% 14%;
+    --card-foreground: 250 10% 98%;
+    --popover: 250 24% 12%;
+    --popover-foreground: 250 10% 98%;
+
+    /* Primary - Purple/Violet */
+    --primary: 263 70% 60%;
+    --primary-foreground: 250 10% 98%;
+    --primary-glow: 263 80% 70%;
+
+    /* Accent - Golden/Amber */
+    --accent: 38 92% 50%;
+    --accent-foreground: 250 24% 10%;
+    --accent-glow: 38 100% 60%;
+
+    /* Secondary */
+    --secondary: 250 15% 20%;
+    --secondary-foreground: 250 10% 98%;
+    --muted: 250 15% 18%;
+    --muted-foreground: 250 10% 65%;
+
+    /* Semantic Colors */
+    --success: 142 71% 45%;
+    --success-foreground: 250 10% 98%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 250 10% 98%;
+
+    /* Text Colors */
+    --foreground: 250 10% 98%;
+
+    /* Borders */
+    --border: 250 15% 22%;
+    --input: 250 15% 22%;
+    --ring: 263 70% 60%;
+
+    /* Border Radius */
+    --radius: 0.75rem;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(263 70% 60%) 0%, hsl(263 80% 70%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(38 92% 50%) 0%, hsl(38 100% 60%) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(250 20% 14%) 0%, hsl(250 24% 10%) 100%);
+
+    /* Shadows */
+    --shadow-elegant: 0 10px 40px -10px hsl(263 70% 30% / 0.4);
+    --shadow-glow: 0 0 40px hsl(263 80% 70% / 0.3);
+    --shadow-accent: 0 4px 20px hsl(38 92% 50% / 0.3);
+
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    margin: 0;
+    min-height: 100vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  }
+
+  /* Typography */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold;
+    letter-spacing: -0.025em;
+  }
+
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl lg:text-5xl;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl lg:text-4xl;
+  }
+
+  h4 {
+    @apply text-xl md:text-2xl;
+  }
+
+  h5 {
+    @apply text-lg md:text-xl;
+  }
+
+  h6 {
+    @apply text-base md:text-lg;
+  }
+}
+
+@layer components {
+  /* Gradient Utilities */
+  .gradient-primary {
+    background: var(--gradient-primary);
+  }
+
+  .gradient-accent {
+    background: var(--gradient-accent);
+  }
+
+  .gradient-subtle {
+    background: var(--gradient-subtle);
+  }
+
+  /* Shadow Utilities */
+  .shadow-elegant {
+    box-shadow: var(--shadow-elegant);
+  }
+
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .shadow-accent {
+    box-shadow: var(--shadow-accent);
+  }
+
+  /* Transition Utility */
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+
+  /* Component Patterns */
+  .btn-primary {
+    @apply bg-primary text-primary-foreground hover:bg-primary/90 rounded-md px-4 py-2 font-medium transition-smooth;
+  }
+
+  .btn-accent {
+    @apply bg-accent text-accent-foreground hover:bg-accent/90 rounded-md px-4 py-2 font-medium transition-smooth shadow-accent;
+  }
+
+  .card {
+    @apply bg-card text-card-foreground rounded-lg p-6 shadow-elegant;
+  }
+
+  .input {
+    @apply bg-background border border-input rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-ring transition-smooth;
+  }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .transition-smooth {
+    transition: none;
+  }
+
+  .animate-slide-up,
+  .animate-slide-down,
+  .animate-fade-in,
+  .animate-scale-in,
+  .animate-glow,
+  .animate-pulse-glow {
+    animation: none;
+  }
+}
+
+/* Focus Styles */
+*:focus-visible {
+  @apply outline-none ring-2 ring-ring ring-offset-2 ring-offset-background;
+}

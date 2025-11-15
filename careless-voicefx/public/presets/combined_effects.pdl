@@ -1,0 +1,7 @@
+# Combined Effects
+[Compressor(threshold_db=-20, ratio=3),
+Chorus(rate_hz=1.0, depth=0.25, mix=0.3),
+Delay(delay_seconds=0.25, feedback=0.3),
+Reverb(room_size=0.6, damping=0.4),
+Limiter(threshold_db=-2.0)],
+"combined_effects.wav"

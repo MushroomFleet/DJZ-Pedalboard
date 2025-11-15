@@ -1,0 +1,4 @@
+# Filters
+[HighpassFilter(cutoff_frequency_hz=500),
+LowpassFilter(cutoff_frequency_hz=5000)],
+"filtered.wav"

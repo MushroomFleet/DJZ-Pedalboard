@@ -1,0 +1,3 @@
+# test
+[Compressor(threshold_db=-20, ratio=4, attack_ms=5, release_ms=100), Reverb(room_size=0.5, damping=0.5, width=0.7, wet_level=0.4)],
+"test.wav"
