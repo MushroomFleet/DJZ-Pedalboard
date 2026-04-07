@@ -32,3 +32,11 @@ This project also features a Gradio-based effect designer tool that enables you 
 
 - Ensure that ComfyUI is set up correctly before installing the custom nodes.
 - For troubleshooting and additional documentation, review the project logs and inline comments.
+
+---
+
+## Support This Project
+
+If you found this useful, please **star the repo** — it helps others discover it!
+
+[![Star on GitHub](https://img.shields.io/github/stars/MushroomFleet/DJZ-Pedalboard?style=social)](https://github.com/MushroomFleet/DJZ-Pedalboard)
